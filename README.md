@@ -84,3 +84,13 @@ Après modification : `python3 scripts/splice-steps.py` puis `node scripts/build
 4. `npm run build:pages` génère `docs/` (page, manifeste, service worker). Pousse le dépôt sur GitHub, puis Settings > Pages > Deploy from a branch > `main` / `/docs`.
 
 Limites : pas de prix communautaires dans cette version (ils demandent le serveur Node) ; les photos prises au téléphone restent sur l'appareil.
+
+## Prix du jour (Open Prices)
+
+`scripts/update-prices.js` interroge chaque jour (GitHub Actions, `.github/workflows/prices.yml`) la base collaborative Open Prices (Open Food Facts, licence ODbL), garde les relevés français des 90 derniers jours, et écrit `docs/prices.json`. L'appli le lit au démarrage.
+
+- Seuls les ingrédients de `scripts/price-map.json` sont concernés (famille de produits Open Food Facts + unité). Les autres restent des estimations.
+- Les relevés mélangent premium, bio et marques de distributeur : on prend le 25ᵉ centile, avec au moins 8 relevés, écartant les valeurs hors de 0,4× à 2,5× la médiane, et rejetant tout résultat hors de 0,6× à 1,7× l'estimation.
+- Un prix propre à une enseigne n'est utilisé que s'il y a au moins 8 relevés pour elle (rare chez Lidl et Aldi) ; sinon : prix national × niveau de l'enseigne.
+- Tes corrections de prix dans la liste restent prioritaires.
+- Lancer à la main : `npm run update-prices` (Node 22, accès internet) ou le bouton « Run workflow » dans l'onglet Actions.

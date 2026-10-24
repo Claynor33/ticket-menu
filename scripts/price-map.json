@@ -1,0 +1,426 @@
+{
+  "pates": {
+    "cats": [
+      "en:pastas"
+    ],
+    "per": "kg"
+  },
+  "riz": {
+    "cats": [
+      "en:rices"
+    ],
+    "per": "kg"
+  },
+  "basmati": {
+    "cats": [
+      "en:basmati-rices"
+    ],
+    "per": "kg"
+  },
+  "semoule": {
+    "cats": [
+      "en:couscous",
+      "en:semolinas"
+    ],
+    "per": "kg"
+  },
+  "lentilles": {
+    "cats": [
+      "en:lentils"
+    ],
+    "per": "kg"
+  },
+  "quinoa": {
+    "cats": [
+      "en:quinoas"
+    ],
+    "per": "kg"
+  },
+  "boulgour": {
+    "cats": [
+      "en:bulgur"
+    ],
+    "per": "kg"
+  },
+  "nouilles": {
+    "cats": [
+      "en:noodles"
+    ],
+    "per": "kg"
+  },
+  "farine": {
+    "cats": [
+      "en:wheat-flours"
+    ],
+    "per": "kg"
+  },
+  "sucre": {
+    "cats": [
+      "en:sugars"
+    ],
+    "per": "kg"
+  },
+  "chapelure": {
+    "cats": [
+      "en:breadcrumbs"
+    ],
+    "per": "kg"
+  },
+  "poischiches": {
+    "cats": [
+      "en:chickpeas"
+    ],
+    "per": "kg",
+    "kgPerPack": 0.4
+  },
+  "haricotsr": {
+    "cats": [
+      "en:red-kidney-beans"
+    ],
+    "per": "kg",
+    "kgPerPack": 0.4
+  },
+  "haricotsb": {
+    "cats": [
+      "en:white-beans"
+    ],
+    "per": "kg",
+    "kgPerPack": 0.4
+  },
+  "haricotsn": {
+    "cats": [
+      "en:black-beans"
+    ],
+    "per": "kg",
+    "kgPerPack": 0.4
+  },
+  "mais": {
+    "cats": [
+      "en:sweet-corn"
+    ],
+    "per": "kg"
+  },
+  "tomconc": {
+    "cats": [
+      "en:chopped-tomatoes"
+    ],
+    "per": "kg"
+  },
+  "concentre": {
+    "cats": [
+      "en:tomato-pastes",
+      "en:tomato-purees"
+    ],
+    "per": "kg"
+  },
+  "laitcoco": {
+    "cats": [
+      "en:coconut-milks"
+    ],
+    "per": "l"
+  },
+  "lait": {
+    "cats": [
+      "en:semi-skimmed-milks"
+    ],
+    "per": "l"
+  },
+  "creme": {
+    "cats": [
+      "en:fresh-creams",
+      "en:creams"
+    ],
+    "per": "l"
+  },
+  "cremeliq": {
+    "cats": [
+      "en:liquid-creams",
+      "en:creams"
+    ],
+    "per": "l"
+  },
+  "beurre": {
+    "cats": [
+      "en:butters"
+    ],
+    "per": "kg"
+  },
+  "gruyere": {
+    "cats": [
+      "en:grated-cheeses"
+    ],
+    "per": "kg"
+  },
+  "mozza": {
+    "cats": [
+      "en:mozzarella"
+    ],
+    "per": "kg"
+  },
+  "parmesan": {
+    "cats": [
+      "en:parmesan",
+      "en:grated-parmesan"
+    ],
+    "per": "kg"
+  },
+  "feta": {
+    "cats": [
+      "en:feta"
+    ],
+    "per": "kg"
+  },
+  "chevre": {
+    "cats": [
+      "en:goat-cheeses"
+    ],
+    "per": "kg"
+  },
+  "raclette": {
+    "cats": [
+      "en:raclette-cheeses"
+    ],
+    "per": "kg"
+  },
+  "huile": {
+    "cats": [
+      "en:olive-oils"
+    ],
+    "per": "l"
+  },
+  "jambon": {
+    "cats": [
+      "en:cooked-hams",
+      "en:hams"
+    ],
+    "per": "kg"
+  },
+  "lardons": {
+    "cats": [
+      "en:lardons",
+      "en:bacon-bits"
+    ],
+    "per": "kg"
+  },
+  "chorizo": {
+    "cats": [
+      "en:chorizo"
+    ],
+    "per": "kg"
+  },
+  "pesto": {
+    "cats": [
+      "en:pesto-sauces",
+      "en:pestos"
+    ],
+    "per": "kg"
+  },
+  "moutarde": {
+    "cats": [
+      "en:mustards"
+    ],
+    "per": "kg"
+  },
+  "ketchup": {
+    "cats": [
+      "en:ketchup"
+    ],
+    "per": "kg"
+  },
+  "mayo": {
+    "cats": [
+      "en:mayonnaises"
+    ],
+    "per": "kg"
+  },
+  "miel": {
+    "cats": [
+      "en:honeys"
+    ],
+    "per": "kg"
+  },
+  "soja": {
+    "cats": [
+      "en:soy-sauces"
+    ],
+    "per": "l"
+  },
+  "vinaigre": {
+    "cats": [
+      "en:vinegars"
+    ],
+    "per": "l"
+  },
+  "thon": {
+    "cats": [
+      "en:canned-tunas",
+      "en:tunas-in-brine"
+    ],
+    "per": "kg"
+  },
+  "sardines": {
+    "cats": [
+      "en:sardines-in-oil",
+      "en:sardines"
+    ],
+    "per": "kg"
+  },
+  "saumonfume": {
+    "cats": [
+      "en:smoked-salmons"
+    ],
+    "per": "kg"
+  },
+  "tofu": {
+    "cats": [
+      "en:tofu"
+    ],
+    "per": "kg"
+  },
+  "carotte": {
+    "cats": [
+      "en:carrots"
+    ],
+    "per": "kg"
+  },
+  "oignon": {
+    "cats": [
+      "en:onions"
+    ],
+    "per": "kg"
+  },
+  "pdt": {
+    "cats": [
+      "en:potatoes"
+    ],
+    "per": "kg"
+  },
+  "tomate": {
+    "cats": [
+      "en:tomatoes"
+    ],
+    "per": "kg"
+  },
+  "courgette": {
+    "cats": [
+      "en:zucchini",
+      "en:courgettes"
+    ],
+    "per": "kg"
+  },
+  "poivron": {
+    "cats": [
+      "en:bell-peppers"
+    ],
+    "per": "kg"
+  },
+  "champi": {
+    "cats": [
+      "en:button-mushrooms",
+      "en:mushrooms"
+    ],
+    "per": "kg"
+  },
+  "brocoli": {
+    "cats": [
+      "en:broccoli"
+    ],
+    "per": "kg"
+  },
+  "butternut": {
+    "cats": [
+      "en:butternut-squashes",
+      "en:butternut-squash"
+    ],
+    "per": "kg"
+  },
+  "poireau": {
+    "cats": [
+      "en:leeks"
+    ],
+    "per": "kg"
+  },
+  "aubergine": {
+    "cats": [
+      "en:eggplants",
+      "en:aubergines"
+    ],
+    "per": "kg"
+  },
+  "chouf": {
+    "cats": [
+      "en:cauliflowers"
+    ],
+    "per": "kg"
+  },
+  "patatedouce": {
+    "cats": [
+      "en:sweet-potatoes"
+    ],
+    "per": "kg"
+  },
+  "pomme": {
+    "cats": [
+      "en:apples"
+    ],
+    "per": "kg"
+  },
+  "echalote": {
+    "cats": [
+      "en:shallots"
+    ],
+    "per": "kg"
+  },
+  "fenouil": {
+    "cats": [
+      "en:fennels",
+      "en:fennel"
+    ],
+    "per": "kg"
+  },
+  "gingembre": {
+    "cats": [
+      "en:ginger"
+    ],
+    "per": "kg"
+  },
+  "poulet": {
+    "cats": [
+      "en:chicken-breasts"
+    ],
+    "per": "kg"
+  },
+  "cuisse": {
+    "cats": [
+      "en:chicken-thighs",
+      "en:chicken-legs"
+    ],
+    "per": "kg"
+  },
+  "boeuf": {
+    "cats": [
+      "en:minced-beef",
+      "en:ground-beef"
+    ],
+    "per": "kg"
+  },
+  "saumon": {
+    "cats": [
+      "en:salmons",
+      "en:salmon-fillets"
+    ],
+    "per": "kg"
+  },
+  "cotesporc": {
+    "cats": [
+      "en:pork-chops"
+    ],
+    "per": "kg"
+  },
+  "crevettes": {
+    "cats": [
+      "en:cooked-shrimps"
+    ],
+    "per": "kg"
+  }
+}
