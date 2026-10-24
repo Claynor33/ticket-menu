@@ -1,0 +1,14 @@
+camembertrot|Camembert rôti, pommes de terre & jambon|porc|35|facile|four, casserole|camembert:0.5 pdt:250 jambon:40 salade:0.2 vinaigre:5 huile:5 ail:0.25 herbes:0.05|
+fondue|Fondue savoyarde maison (sans alcool)|porc|30|facile|casserole|fondue:200 lait:50 farine:5 ail:0.25 baguette:0.35 pdt:150 jambon:30 salade:0.15 citron:0.1|
+croziflette|Croziflette au reblochon & lardons|porc|40|facile|four, casserole, poêle|pates:100 reblochon:0.35 lardons:50 oignon:40 creme:40 beurre:5|
+soupeoignon|Soupe à l’oignon gratinée|veg|45|facile|casserole, four|oignon:250 beurre:15 farine:8 bouillon:0.5 baguette:0.2 gruyere:40|
+potaufeu|Pot-au-feu et sa moutarde|boeuf|170|facile|cocotte|boeufmorc:170 carotte:100 poireau:80 pdt:200 oignon:40 bouillon:0.3 moutarde:10 herbes:0.1|
+moulescreme|Moules à la crème & frites|poisson|35|facile|casserole, four|moules:500 echalote:30 creme:60 herbes:0.1 frites:150 beurre:10|
+choucroute|Choucroute garnie express|porc|40|facile|cocotte|choucroute:250 saucisse:125 lardons:50 pdt:200 oignon:30 moutarde:10|
+aligotsaucisse|Aligot maison & saucisse|porc|40|moyen|casserole, poêle|pdt:300 raclette:60 creme:50 ail:0.5 beurre:10 saucisse:125 lait:30|
+welsh|Welsh au fromage & jambon|porc|30|facile|four, casserole|painmie:3 gruyere:100 lait:60 moutarde:8 oeufs:1 jambon:40 salade:0.2 vinaigre:5|
+pates4fromages|Pâtes aux quatre fromages|veg|20|facile|casserole|pates:100 gruyere:30 bleu:25 chevre:25 mozza:25 creme:40|
+truffade|Truffade (pommes de terre, lardons & fromage)|porc|40|facile|poêle|pdt:300 lardons:50 raclette:60 ail:0.5 salade:0.2 vinaigre:5 huile:5|
+fishchips|Fish & chips maison|poisson|40|moyen|four, poêle|colin:150 farine:30 oeufs:0.5 lait:40 chapelure:15 frites:200 citron:0.25 mayo:15|
+pizza4f|Pizza quatre fromages|veg|25|facile|four|pizzapate:0.4 tomconc:50 mozza:30 gruyere:20 chevre:20 bleu:20|
+tartethon|Tarte au thon, tomates & moutarde|poisson|50|facile|four|brisee:0.25 thon:60 tomate:100 moutarde:10 gruyere:25 oeufs:0.5 herbes:0.05|

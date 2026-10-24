@@ -1,0 +1,430 @@
+{
+ "curry": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-au-curry-vert-and-lait-de-coco-63a094fc20b480c7c60a1f6e",
+  "t": "Poulet au curry vert & lait de coco"
+ },
+ "tarte": {
+  "u": "https://www.hellofresh.fr/recipes/tarte-aux-poireaux-and-lardons-a-lancienne-648b67a625862a444bdb62f1",
+  "t": "Tarte aux poireaux & lardons à l'ancienne"
+ },
+ "lentilles": {
+  "u": "https://www.hellofresh.fr/recipes/saucisse-lentilles-facon-petit-sale-65435de33357e0637a828dac",
+  "t": "Saucisse-lentilles façon petit salé"
+ },
+ "dahl": {
+  "u": "https://www.hellofresh.fr/recipes/dahl-de-lentilles-patate-douce-and-epinards-5f2a76d72a0b3109c2085cc4",
+  "t": "Dahl de lentilles, patate douce & épinards"
+ },
+ "hachis": {
+  "u": "https://www.hellofresh.fr/recipes/hachis-parmentier-gourmand-de-boeuf-62b2669305cae1baa2007768",
+  "t": "Hachis parmentier gourmand de bœuf"
+ },
+ "cuisses": {
+  "u": "https://www.hellofresh.fr/recipes/cuisse-de-poulet-rotie-a-la-mediterraneenne-64073d82df6297bb5beef22f",
+  "t": "Cuisse de poulet rôtie à la méditerranéenne"
+ },
+ "steak": {
+  "u": "https://www.hellofresh.fr/recipes/steak-hache-frites-and-beurre-aux-herbes-6243131df2ed5a59105f1302",
+  "t": "Steak haché, frites & beurre aux herbes"
+ },
+ "poischiches": {
+  "u": "https://www.hellofresh.fr/recipes/curry-indien-de-pois-chiches-and-patate-douce-63456a607a0d2ed8f30e8a02",
+  "t": "Curry indien de pois chiches & patate douce"
+ },
+ "gratinpates": {
+  "u": "https://www.hellofresh.fr/recipes/gratin-de-pates-au-jambon-retour-en-enfance-6603bae58928bc357c2d3663",
+  "t": "Gratin de pâtes au jambon"
+ },
+ "fajitas": {
+  "u": "https://www.hellofresh.fr/recipes/fajitas-de-poulet-a-lavocat-619cfd6bd7101217ea3cec33",
+  "t": "Fajitas de poulet à l'avocat"
+ },
+ "lasagnes": {
+  "u": "https://www.hellofresh.fr/recipes/lasagne-al-ragu-and-bechamel-62150833a8fe042b4b54f383",
+  "t": "Lasagne al ragù & béchamel"
+ },
+ "tajine": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-aux-raisins-secs-facon-tajine-640b584eb1bd442c3cd15d6b",
+  "t": "Poulet aux raisins secs façon tajine"
+ },
+ "chilisin": {
+  "u": "https://www.hellofresh.fr/recipes/chili-sin-carne-and-guacamole-maison-60db1955429986466c7b614f",
+  "t": "Chili sin carne & guacamole maison"
+ },
+ "currypat": {
+  "u": "https://www.hellofresh.fr/recipes/curry-de-lentilles-epinards-and-patate-douce-672890b512c55222c8cc6ab1",
+  "t": "Curry de lentilles, épinards & patate douce"
+ },
+ "quichelorr": {
+  "u": "https://www.hellofresh.fr/recipes/quiche-lorraine-poireaux-lardons-5e3bf6822f0d6214e1304333",
+  "t": "Quiche lorraine poireaux-lardons"
+ },
+ "flamm": {
+  "u": "https://www.hellofresh.fr/recipes/flammekueche-oignons-and-lardons-624c65f89267e96ddb4341e7",
+  "t": "Flammekueche oignons & lardons"
+ },
+ "nicoise": {
+  "u": "https://www.hellofresh.fr/recipes/salade-facon-nicoise-64fb2c7e71b62ce128341cfc",
+  "t": "Salade façon niçoise"
+ },
+ "taboule": {
+  "u": "https://www.hellofresh.fr/recipes/salade-de-boulgour-facon-taboule-626fec10213e5e0c0a09bca7",
+  "t": "Salade de boulgour façon taboulé"
+ },
+ "wrapthon": {
+  "u": "https://www.hellofresh.fr/recipes/wraps-au-thon-epicee-a-la-harissa-68234f26183c4bc24d64282a",
+  "t": "Wraps express thon à la harissa & crudités"
+ },
+ "minestrone": {
+  "u": "https://www.hellofresh.fr/recipes/minestrone-aux-conchiglie-64073cb2683721c9a32b07f8",
+  "t": "Minestrone aux conchiglie"
+ },
+ "gnocchichor": {
+  "u": "https://www.hellofresh.fr/recipes/gratin-de-gnocchi-au-chorizo-64073dfb9c6d10cd16eab780",
+  "t": "Gratin de gnocchi au chorizo"
+ },
+ "falafel": {
+  "u": "https://www.hellofresh.fr/recipes/pita-aux-falafels-et-a-la-feta-606343352d69c116b0053fc7",
+  "t": "Pita aux falafels et à la feta"
+ },
+ "bololentilles": {
+  "u": "https://www.hellofresh.fr/recipes/pates-et-sauce-bolognaise-vegetarienne-5c5dab1ce3f3397d1c2e7342",
+  "t": "Pâtes et sauce bolognaise végétarienne"
+ },
+ "poivronsfarcis": {
+  "u": "https://www.hellofresh.fr/recipes/poivron-farci-aux-champignons-and-poulet-5fbd1e518de6dc21c64592b2",
+  "t": "Poivron farci aux champignons & poulet"
+ },
+ "courgfarcies": {
+  "u": "https://www.hellofresh.fr/recipes/courgette-farcie-vegetarienne-gratinee-au-chevre-67603a2fafc243b64a9f7cb7",
+  "t": "Courgette farcie au couscous perlé & chèvre"
+ },
+ "currycrev": {
+  "u": "https://www.hellofresh.fr/recipes/curry-de-crevettes-and-coco-facon-moqueca-646caba18c393b044d74496a",
+  "t": "Curry de crevettes & coco façon Moqueca"
+ },
+ "gratinendives": {
+  "u": "https://www.hellofresh.fr/recipes/endives-au-jambon-gratinees-6231ca8645a8e716ea6e3d26",
+  "t": "Endives au jambon gratinées"
+ },
+ "burgerpoulet": {
+  "u": "https://www.hellofresh.fr/recipes/burger-au-poulet-croustillant-and-avocat-61377eb7256fc53c23222239",
+  "t": "Burger au poulet croustillant & avocat"
+ },
+ "cassoulet": {
+  "u": "https://www.hellofresh.fr/recipes/cassoulet-au-confit-de-canard-and-a-la-saucisse-63343c40aaa529bd610db997",
+  "t": "Cassoulet au confit de canard & à la saucisse"
+ },
+ "pouletcreme": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-a-la-creme-et-aux-champignons-5e846be9875be506e44e59aa",
+  "t": "Poulet à la crème et aux champignons"
+ },
+ "pouletmoutarde": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-a-la-moutarde-poireau-vapeur-and-puree-64fb2ddf32e9107c6db888ad",
+  "t": "Poulet à la moutarde, poireau vapeur & purée"
+ },
+ "poulettomate": {
+  "u": "https://www.hellofresh.fr/recipes/cuisse-de-poulet-tomates-and-poivron-rotis-624c661121bb9d75a0096e87",
+  "t": "Cuisse de poulet, tomates & poivron rôtis"
+ },
+ "thonpoivron": {
+  "u": "https://www.hellofresh.fr/recipes/salade-de-riz-facon-nicoise-au-thon-and-poivron-64fb2d7a786cce2df0e01725",
+  "t": "Salade de riz à la niçoise : thon & olives"
+ },
+ "falafelpita": {
+  "u": "https://www.hellofresh.fr/recipes/pita-aux-falafels-et-a-la-feta-606343352d69c116b0053fc7",
+  "t": "Pita aux falafels et à la feta"
+ },
+ "saladelentilles": {
+  "u": "https://www.hellofresh.fr/recipes/salade-de-lentilles-et-boulgour-a-la-feta-5e4a480c80cd486d3e50d70a",
+  "t": "Salade de lentilles et boulgour à la feta"
+ },
+ "gratincourge": {
+  "u": "https://www.hellofresh.fr/recipes/gratin-courgette-mozza-and-pates-652d42316720825b47fd8a0e",
+  "t": "Gratin courgette-mozza & conchiglie"
+ },
+ "poivronsriz": {
+  "u": "https://www.hellofresh.fr/recipes/poivrons-farcis-veggie-au-chili-sin-carne-and-riz-66acf7ec155ad8a42f3389f7",
+  "t": "Poivrons farcis au chili sin carne & riz"
+ },
+ "orzostroga": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-au-paprika-fume-facon-stroganoff-65d86d9b700746d2fe51fefd",
+  "t": "Poulet au paprika fumé façon Stroganoff"
+ },
+ "gnocchigratin": {
+  "u": "https://www.hellofresh.fr/recipes/gratin-eclair-de-gnocchi-champis-and-epinards-68270014d8141d3e34845af6",
+  "t": "Gratin Mystique : gnocchi, champis & épinards"
+ },
+ "bowlsaumonfume": {
+  "u": "https://www.hellofresh.fr/recipes/poke-bowl-au-saumon-fume-and-avocat-65ef2861a66a6a1427fc2da1",
+  "t": "Poke bowl au saumon fumé & avocat"
+ },
+ "saucisseleg": {
+  "u": "https://www.hellofresh.fr/recipes/saucisse-de-toulouse-and-legumes-rotis-6722074e3fa8b036e634a266",
+  "t": "Saucisse de Toulouse & légumes rôtis"
+ },
+ "bibimbap": {
+  "u": "https://www.hellofresh.fr/recipes/bibimbap-vegetarien-au-tofu-647758716eb29dbe8bbed536",
+  "t": "Bibimbap végétarien au tofu"
+ },
+ "yassa": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-facon-yassa-and-riz-aux-tomates-sechees-6140b3fd55b8c165064704c2",
+  "t": "Poulet façon Yassa & riz aux tomates séchées"
+ },
+ "tikka": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-tikka-masala-and-riz-basmati-5f32c84bcdb3a6523f3ec93c",
+  "t": "Poulet tikka masala & riz basmati"
+ },
+ "poulettexmex": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-tex-mex-and-haricots-noirs-64fb2cb7786cce2df0e01259",
+  "t": "Poulet tex-mex & haricots noirs"
+ },
+ "pouletvert": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-thai-au-curry-vert-and-lait-de-coco-634ec1c05e5fa033b90c1bc0",
+  "t": "Curry vert thaï au poulet"
+ },
+ "cabsesame": {
+  "u": "https://www.hellofresh.fr/recipes/cabillaud-en-croute-de-sesame-and-riz-basmati-63b47b5957bf2e783906ec09",
+  "t": "Cabillaud en croûte de sésame & riz basmati"
+ },
+ "cabamande": {
+  "u": "https://www.hellofresh.fr/recipes/cabillaud-en-croute-damandes-64fb2cd671b62ce128341eaf",
+  "t": "Cabillaud en croûte d'amandes"
+ },
+ "cassolette": {
+  "u": "https://www.hellofresh.fr/recipes/cassolette-de-poisson-aux-poireaux-et-a-la-creme-5eb4466668a6233da4115072",
+  "t": "Cassolette de poisson aux poireaux et à la crème"
+ },
+ "tourtepoisson": {
+  "u": "https://www.hellofresh.fr/recipes/tourte-de-poisson-au-fenouil-et-a-la-tomate-5ef35055eb1535286b5c593d",
+  "t": "Tourte de poisson au fenouil et à la tomate"
+ },
+ "polpette": {
+  "u": "https://www.hellofresh.fr/recipes/spaghetti-and-polpette-de-boeuf-658434c9f9c7ff8689942e50",
+  "t": "Spaghetti & polpette de bœuf"
+ },
+ "pastamex": {
+  "u": "https://www.hellofresh.fr/recipes/penne-and-boeuf-hache-facon-tex-mex-64073e7edf6297bb5beef282",
+  "t": "Penne & bœuf haché façon Tex-Mex"
+ },
+ "wrapsboeufsoja": {
+  "u": "https://www.hellofresh.fr/recipes/wraps-deminces-de-boeuf-de-po-6596bcceaa12a55eb352ea9d",
+  "t": "Kung Fu Wraps au bœuf & sauce soja"
+ },
+ "wokboeuf": {
+  "u": "https://www.hellofresh.fr/recipes/wok-de-nouilles-and-boeuf-hache-5fe1d217002c3602fc73be7d",
+  "t": "Wok de nouilles & bœuf haché"
+ },
+ "mignonmoutarde": {
+  "u": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-marine-au-miel-and-moutarde-64ac1bd5adf12186bf9af057",
+  "t": "Filet mignon de porc mariné au miel & moutarde"
+ },
+ "pdtfarciesrac": {
+  "u": "https://www.hellofresh.fr/recipes/tartiflette-revisitee-au-fromage-a-raclette-68596705971405a9ee1f3112",
+  "t": "Racliflette aux lardons & pommes de terre"
+ },
+ "burgerveg": {
+  "u": "https://www.hellofresh.fr/recipes/le-burger-veggie-and-sa-sauce-secrete-64d4d2b1f9b0f5df4ff906a1",
+  "t": "Le burger veggie & sa sauce secrète"
+ },
+ "soupelenti": {
+  "u": "https://www.hellofresh.fr/recipes/chorba-aadess-soupe-de-lentilles-egyptienne-637ced2e62a4f00d92047e9c",
+  "t": "Chorba aadess : soupe de lentilles égyptienne"
+ },
+ "poulparmesan": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-parmigiana-and-conchiglie-a-la-sauce-tomate-64fb2da632e9107c6db88759",
+  "t": "Poulet parmigiana gratiné & tagliatelle"
+ },
+ "marryme": {
+  "u": "https://www.hellofresh.fr/recipes/le-poulet-epouse-moi-et-tagliatelles-fraiches-6613f59817fb871fe34ed0b3",
+  "t": "Marry-me chicken & tagliatelle fraîches"
+ },
+ "pouletmexic": {
+  "u": "https://www.hellofresh.fr/recipes/cuisse-de-poulet-a-la-mexicaine-64073d88df6297bb5beef232",
+  "t": "Cuisse de poulet à la mexicaine"
+ },
+ "pouletepinards": {
+  "u": "https://www.hellofresh.fr/recipes/cuisse-de-poulet-grillee-and-puree-aux-epinards-64fb2d8d71b62ce1283423a4",
+  "t": "Cuisse de poulet grillée & purée d'épinards"
+ },
+ "saltimbocca": {
+  "u": "https://www.hellofresh.fr/recipes/saltimbocca-de-dinde-61000ce1556dd9651d24ec37",
+  "t": "Saltimbocca de dinde"
+ },
+ "dindepanee": {
+  "u": "https://www.hellofresh.fr/recipes/escalope-de-dinde-panee-and-haricots-verts-629e09a7fa2eb706cf07a2a6",
+  "t": "Escalope de dinde panée & haricots verts"
+ },
+ "dindepenne": {
+  "u": "https://www.hellofresh.fr/recipes/escalope-de-dinde-penne-and-creme-de-tomates-64073ccc9c6d10cd16eab6f2",
+  "t": "Escalope de dinde, penne & crème de tomates"
+ },
+ "dindegrenailles": {
+  "u": "https://www.hellofresh.fr/recipes/escalope-de-dinde-and-grenailles-roties-64fb2d1a32e9107c6db8837e",
+  "t": "Dinde & grenailles rôties au romarin"
+ },
+ "bouletespoulet": {
+  "u": "https://www.hellofresh.fr/recipes/riz-a-la-tomate-et-boulettes-de-poulet-5e020b1be7dda303827fe3f2",
+  "t": "Riz à la tomate et boulettes de poulet"
+ },
+ "tacospoulet": {
+  "u": "https://www.hellofresh.fr/recipes/tacos-mexicains-au-poulet-hache-5c8654fde3f33953b40b23b5",
+  "t": "Tacos mexicains au poulet haché"
+ },
+ "wrapsblanche": {
+  "u": "https://www.hellofresh.fr/recipes/wraps-de-poulet-sauce-blanche-and-guacamole-647089720c1e02e39244a3a6",
+  "t": "Wraps de poulet sauce blanche & guacamole"
+ },
+ "pouletpoulette": {
+  "u": "https://www.hellofresh.fr/recipes/poulet-and-frites-sauce-poulette-facon-bistrot-64fae7cd786cce2df0e002ba",
+  "t": "Poulet-frites sauce poulette façon bistrot"
+ },
+ "smashburger": {
+  "u": "https://www.hellofresh.fr/recipes/le-smash-burger-boeuf-and-cheddar-67868bebebcb649801e3c3d9",
+  "t": "Le Smash Burger bœuf & cheddar"
+ },
+ "burritoboeuf": {
+  "u": "https://www.hellofresh.fr/recipes/burrito-mexicain-au-boeuf-and-cheddar-63fe14b8b2d5d12fe300e0e0",
+  "t": "Burrito mexicain au bœuf & cheddar"
+ },
+ "boeufprov": {
+  "u": "https://www.hellofresh.fr/recipes/mijote-de-boeuf-a-la-provencale-626fed149d4484b09100f7b1",
+  "t": "Mijoté de bœuf à la provençale"
+ },
+ "chilibutter": {
+  "u": "https://www.hellofresh.fr/recipes/chili-au-boeuf-and-butternut-63c6f8d7202a53bb6608b063",
+  "t": "Chili au bœuf & butternut"
+ },
+ "boeufeffiloche": {
+  "u": "https://www.hellofresh.fr/recipes/mijote-au-boeuf-effiloche-and-semoule-66df0f9c46f5f84364721d0a",
+  "t": "Mijoté au boeuf effiloché & semoule"
+ },
+ "boeuftexan": {
+  "u": "https://www.hellofresh.fr/recipes/mijote-express-dharicots-and-boeuf-comme-un-chili-65490051d637bf067f0a12da",
+  "t": "Mijoté de bœuf & haricots noirs à la texane"
+ },
+ "mignonagrume": {
+  "u": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-sauce-orange-and-miel-639878f222065f9e1b0423fd",
+  "t": "Filet mignon de porc, sauce orange & miel"
+ },
+ "mignonherbes": {
+  "u": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-en-croute-dherbes-64073f64683721c9a32b08ef",
+  "t": "Filet mignon de porc en croûte d'herbes"
+ },
+ "mignonpates": {
+  "u": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-aux-orecchiette-5b5f002330006c0625663cf4",
+  "t": "Filet mignon de porc aux orecchiette"
+ },
+ "saucissedauph": {
+  "u": "https://www.hellofresh.fr/recipes/gratin-dauphinois-and-saucisse-de-toulouse-6374aff4812128be24013156",
+  "t": "Gratin dauphinois & saucisse de Toulouse"
+ },
+ "cabciboul": {
+  "u": "https://www.hellofresh.fr/recipes/filet-de-cabillaud-sauce-ciboulette-632b3892f68cbd3b120293ba",
+  "t": "Filet de cabillaud sauce ciboulette"
+ },
+ "cabsoja": {
+  "u": "https://www.hellofresh.fr/recipes/cabillaud-au-four-et-sauce-soja-moutarde-5d89c8cce11316588f7c77d5",
+  "t": "Cabillaud au four et sauce soja-moutarde"
+ },
+ "brandadecab": {
+  "u": "https://www.hellofresh.fr/recipes/brandade-croustillante-de-cabillaud-64073f099c6d10cd16eab7df",
+  "t": "Brandade croustillante de cabillaud"
+ },
+ "saumonsesame": {
+  "u": "https://www.hellofresh.fr/recipes/saumon-en-croute-de-sesame-and-mayo-au-soja-64073eaf683721c9a32b08aa",
+  "t": "Saumon en croûte de sésame & mayo au soja"
+ },
+ "saumoncacah": {
+  "u": "https://www.hellofresh.fr/recipes/saumon-sauce-cacahuetes-and-wok-de-legumes-6140b3b60749245fe36a5ac2",
+  "t": "Saumon, sauce cacahuètes & wok de légumes"
+ },
+ "saumonfeuille": {
+  "u": "https://www.hellofresh.fr/recipes/filet-de-saumon-en-croute-de-pate-feuilletee-5f60afc22c11677a5163ebb5",
+  "t": "Filet de saumon en croûte de pâte feuilletée"
+ },
+ "saumonpure": {
+  "u": "https://www.hellofresh.fr/recipes/saumon-citronne-and-puree-686fd8b8a5a49c635d8a6908",
+  "t": "Saumon grillé au citron & sa purée onctueuse"
+ },
+ "laksa": {
+  "u": "https://www.hellofresh.fr/recipes/laksa-soupe-de-nouilles-crevettes-and-coco-65435e0a3357e0637a828e2f",
+  "t": "Laksa : soupe de nouilles, crevettes & coco"
+ },
+ "risottocrev": {
+  "u": "https://www.hellofresh.fr/recipes/risotto-aux-crevettes-and-curry-64fb2da671b62ce12834245f",
+  "t": "Risotto aux crevettes & curry"
+ },
+ "colincoco": {
+  "u": "https://www.hellofresh.fr/recipes/mijote-de-poisson-au-lait-de-coco-et-au-citron-vert-5cc6fad4b64700001245a1a8",
+  "t": "Mijoté de poisson au lait de coco et au citron vert"
+ },
+ "wrapspoisson": {
+  "u": "https://www.hellofresh.fr/recipes/wraps-au-poisson-et-double-portion-de-salade-et-tomates-5ea3188d3052c00f2350dd03",
+  "t": "Wraps au poisson et double portion de salade et tomates"
+ },
+ "saumonpoche": {
+  "u": "https://www.hellofresh.fr/recipes/filet-de-saumon-poche-et-haricots-verts-rotis-5e0e0d32682ef6412058630d",
+  "t": "Filet de saumon poché et haricots verts"
+ },
+ "pitathon": {
+  "u": "https://www.hellofresh.fr/recipes/pitas-au-thon-and-houmous-696fc0af933a02843ffb174b",
+  "t": "Pitas au thon, sauce yaourt & houmous"
+ },
+ "tartechevreonion": {
+  "u": "https://www.hellofresh.fr/recipes/tarte-fine-au-chevre-and-oignons-confits-64073fbe683721c9a32b0907",
+  "t": "Tarte fine au chèvre & oignons confits"
+ },
+ "tartepatatedouce": {
+  "u": "https://www.hellofresh.fr/recipes/tarte-fine-de-patate-douce-and-chevre-frais-63cf9ef62e534c666d0883c2",
+  "t": "Tarte fine de patate douce & chèvre frais"
+ },
+ "tarteete": {
+  "u": "https://www.hellofresh.fr/recipes/tarte-fine-au-chevre-and-legumes-dete-627bb6195d4183102700c467",
+  "t": "Tarte fine au chèvre & légumes d'été"
+ },
+ "gratinquinoa": {
+  "u": "https://www.hellofresh.fr/recipes/gratin-de-quinoa-and-chevre-65118d643e0981e84af20de3",
+  "t": "Gratin de quinoa & chèvre"
+ },
+ "orzocourg": {
+  "u": "https://www.hellofresh.fr/recipes/risotto-dorzo-a-la-courgette-et-aux-champignons-poeles-5f4509b7cad734376c218494",
+  "t": "Risotto d'orzo à la courgette et aux champignons poêlés"
+ },
+ "gnocchionepot": {
+  "u": "https://www.hellofresh.fr/recipes/one-pot-de-gnocchis-aux-tomates-and-epinards-64fb2ce5786cce2df0e0137d",
+  "t": "One pot de gnocchis aux tomates & épinards"
+ },
+ "gnocchilardons": {
+  "u": "https://www.hellofresh.fr/recipes/gnocchi-a-la-poele-sauce-tomate-et-lardons-5be5b2da30006c07c91add33",
+  "t": "Gnocchi à la poêle, sauce tomate et lardons"
+ },
+ "flammcourg": {
+  "u": "https://www.hellofresh.fr/recipes/flammekueche-a-la-mozzarella-de-bufflonne-et-aux-courgettes-5d2c5e265839a1001733dc82",
+  "t": "Flammekueche à la mozzarella de bufflonne et aux courgettes"
+ },
+ "bowlfalafelpd": {
+  "u": "https://www.hellofresh.fr/recipes/bowl-falafels-and-patate-douce-rotie-621506c48bd09c3495420d4c",
+  "t": "Bowl falafels & patate douce rôtie"
+ },
+ "bowllibanais": {
+  "u": "https://www.hellofresh.fr/recipes/bowl-libanais-taboule-and-houmous-maison-6255d96316319060477eadcb",
+  "t": "Bowl libanais : taboulé & houmous maison"
+ },
+ "tajinevege": {
+  "u": "https://www.hellofresh.fr/recipes/tajine-de-legumes-and-tfaya-doignons-67347b95f7f6320abf8f6b2f",
+  "t": "Tajine végé, amandes & tfaya d'oignons"
+ },
+ "bibimbappoulet": {
+  "u": "https://www.hellofresh.fr/recipes/bibimbap-coreen-au-poulet-5f76e356ac717973dd753716",
+  "t": "Bibimbap coréen au poulet"
+ },
+ "carboveg": {
+  "u": "https://www.hellofresh.fr/recipes/spaghetti-carbonara-vegetariens-5d933d55bb3f074f383d1601",
+  "t": "Spaghetti carbonara végétariens"
+ },
+ "avocadotoast": {
+  "u": "https://www.hellofresh.fr/recipes/avocado-toast-minute-and-bacon-croustillant-65fb08b1aed1d40579f2b378",
+  "t": "Avocado toast minute & bacon croustillant"
+ }
+}

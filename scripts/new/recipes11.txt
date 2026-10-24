@@ -1,0 +1,50 @@
+poulparmesan|Poulet parmigiana gratiné & pâtes|poulet|40|moyen|poêle, four, casserole|poulet:130 chapelure:20 oeufs:0.5 farine:10 tomconc:100 mozza:40 pates:100 huile:10|19
+marryme|Marry-me chicken & pâtes|poulet|30|facile|poêle, casserole|poulet:130 pates:100 creme:50 tomconc:60 ail:0.5 parmesan:15 huile:8|18
+pouletmexic|Cuisse de poulet à la mexicaine & riz|poulet|55|facile|four, plat, casserole|cuisse:250 poivron:60 mais:40 haricotsn:0.25 epices:3 riz:70 huile:8|28
+pouletepinards|Cuisse de poulet grillée & purée d’épinards|poulet|55|moyen|four, casserole|cuisse:250 pdt:250 epinards:80 lait:50 beurre:15 huile:5 ail:0.5|13
+saltimbocca|Saltimbocca de dinde & pommes de terre|poulet|35|moyen|poêle, casserole|dinde:130 jambon:30 herbes:0.1 pdt:250 beurre:10 hv:100 farine:8|40
+dindepanee|Escalope de dinde panée & haricots verts|poulet|35|facile|poêle, casserole|dinde:130 chapelure:30 oeufs:0.5 farine:10 hv:150 citron:0.25 huile:15 pdt:200 lait:40 beurre:10|41
+dindepenne|Escalope de dinde, penne & crème de tomates|poulet|30|facile|poêle, casserole|dinde:120 pates:100 tomconc:100 creme:40 oignon:30 herbes:0.1 huile:5|42
+dindegrenailles|Dinde & pommes de terre rôties au romarin|poulet|45|facile|four, plat, poêle|dinde:130 pdt:300 herbes:0.1 ail:0.5 huile:12 hv:100|43
+bouletespoulet|Boulettes de poulet & riz à la tomate|poulet|40|moyen|poêle, casserole|poulet:120 chapelure:15 oeufs:0.3 oignon:30 tomconc:100 riz:70 ail:0.5 huile:8|44
+tacospoulet|Tacos mexicains au poulet|poulet|30|facile|poêle|tortillas:2 poulet:110 tomate:60 salade:0.15 mais:30 epices:3 gruyere:20 yaourt:0.5 huile:5|38
+wrapsblanche|Wraps de poulet, sauce blanche & guacamole|poulet|25|facile|poêle|tortillas:2 poulet:110 avocat:0.5 yaourt:0.5 salade:0.15 tomate:50 citron:0.25 epices:2 huile:5|37
+pouletpoulette|Poulet-frites sauce poulette|poulet|40|facile|four, poêle|poulet:130 frites:150 champi:60 creme:50 echalote:20 citron:0.25 beurre:8|12
+smashburger|Smash burger & frites|boeuf|30|facile|poêle, four|painburger:1 boeuf:130 gruyere:25 oignon:30 ketchup:15 mayo:15 salade:0.1 frites:150|123
+burritoboeuf|Burrito mexicain au bœuf & fromage|boeuf|30|facile|poêle, casserole|tortillas:2 boeuf:110 riz:50 haricotsr:0.2 mais:30 tomate:50 gruyere:25 epices:3 oignon:30 huile:5|159
+boeufprov|Mijoté de bœuf à la provençale|boeuf|120|moyen|cocotte|boeufmorc:160 tomconc:100 olives:15 oignon:50 carotte:60 pates:80 herbes:0.1 huile:8 ail:0.5|122
+chilibutter|Chili au bœuf & butternut|boeuf|45|facile|sauteuse, casserole|boeuf:100 butternut:150 haricotsr:0.25 tomconc:100 oignon:40 riz:60 epices:3 huile:5|158
+boeufeffiloche|Mijoté de bœuf effiloché & semoule|boeuf|130|facile|cocotte, casserole|boeufmorc:150 semoule:70 tomconc:100 oignon:40 carotte:60 epices:3 huile:5|124
+boeuftexan|Mijoté de bœuf & haricots noirs à la texane|boeuf|110|moyen|cocotte, casserole|boeufmorc:140 haricotsn:0.25 mais:30 tomconc:100 oignon:40 riz:60 epices:4 huile:5|121
+mignonagrume|Filet mignon de porc, sauce citron-miel & haricots verts|porc|40|facile|poêle, casserole|filetmignon:140 miel:10 citron:0.5 hv:130 pdt:200 huile:5 beurre:8|106
+mignonherbes|Filet mignon de porc en croûte d’herbes|porc|50|moyen|four, plat|filetmignon:140 moutarde:10 chapelure:20 herbes:0.1 pdt:250 hv:100 huile:8|107
+mignonpates|Filet mignon de porc & pâtes à la crème|porc|35|facile|poêle, casserole|filetmignon:130 pates:100 creme:50 champi:60 echalote:15 huile:5|108
+saucissedauph|Saucisses & gratin dauphinois|porc|75|facile|four, plat|saucisse:125 pdt:300 creme:100 ail:0.5 salade:0.25 beurre:5 vinaigre:5|160
+cabciboul|Cabillaud, sauce crémeuse à la ciboulette|poisson|30|facile|poêle, casserole|cabillaud:140 creme:50 herbes:0.1 riz:70 hv:100 beurre:8|51
+cabsoja|Cabillaud au four, sauce soja-moutarde|poisson|30|facile|four, casserole|cabillaud:140 soja:12 moutarde:8 miel:5 riz:70 brocoli:120|54
+brandadecab|Brandade croustillante de cabillaud|poisson|55|moyen|four, casserole|cabillaud:130 pdt:250 lait:60 ail:0.5 chapelure:15 huile:15 salade:0.15|59
+saumonsoja|Saumon mariné soja-gingembre & riz|poisson|30|facile|four, casserole|saumon:130 soja:15 gingembre:4 miel:6 riz:70 brocoli:120|74
+saumonsesame|Saumon en croûte de sésame & mayo au soja|poisson|30|facile|poêle, casserole|saumon:130 sesame:15 mayo:20 soja:8 riz:70 hv:120 huile:5|76
+saumoncacah|Saumon sauce cacahuète & wok de légumes|poisson|30|facile|poêle, casserole|saumon:130 cacahuete:20 soja:10 poelee:150 nouilles:80 laitcoco:30|77
+saumonfeuille|Saumon en croûte feuilletée & épinards|poisson|50|moyen|four|saumon:130 feuillet:0.25 epinards:60 ffrais:40 hv:120 citron:0.25|84
+saumonpure|Saumon grillé au citron & purée onctueuse|poisson|35|facile|poêle, casserole|saumon:130 citron:0.5 pdt:250 lait:50 beurre:15 hv:100 huile:5|85
+laksa|Laksa : soupe de nouilles, crevettes & coco|poisson|30|moyen|casserole|crevettes:100 nouilles:70 laitcoco:100 patecurry:15 citron:0.25 gingembre:3 bouillon:0.3 herbes:0.1 poelee:80|89
+risottocrev|Risotto de crevettes au curry|poisson|35|moyen|sauteuse|crevettes:100 riz:80 oignon:30 curry:3 creme:30 bouillon:0.3 parmesan:10|91
+colincoco|Colin au lait de coco et citron|poisson|35|facile|sauteuse, casserole|colin:140 laitcoco:80 citron:0.5 patecurry:8 riz:70 oignon:30|93
+wrapspoisson|Wraps de poisson pané, salade & tomates|poisson|30|facile|poêle|tortillas:2 colin:110 chapelure:20 oeufs:0.3 farine:8 salade:0.2 tomate:60 yaourt:0.5 huile:10|95
+saumonpoche|Saumon poché, pommes de terre & haricots verts|poisson|30|facile|casserole|saumon:130 pdt:250 hv:130 creme:30 citron:0.25 herbes:0.1|97
+pitathon|Pitas au thon, sauce yaourt & houmous|poisson|20|facile|poêle|pita:1 thon:60 houmous:40 yaourt:0.5 carotte:40 concombre:0.2 citron:0.25 salade:0.15|194
+tartechevreonion|Tarte fine chèvre & oignons confits|veg|40|facile|four, poêle|feuillet:0.25 chevre:40 oignon:100 miel:8 balsamique:8 salade:0.2 huile:5|130
+tartepatatedouce|Tarte fine patate douce & chèvre frais|veg|45|facile|four|feuillet:0.25 patatedouce:150 ffrais:40 oignon:30 herbes:0.1 huile:8 salade:0.15|132
+tarteete|Tarte fine chèvre & légumes d’été|veg|40|facile|four|feuillet:0.25 chevre:40 courgette:80 tomate:80 herbes:0.1 moutarde:8 huile:5|126
+gratinquinoa|Gratin de quinoa & chèvre|veg|40|facile|four, casserole|quinoa:70 chevre:40 courgette:100 creme:40 gruyere:20 oignon:30|128
+orzocourg|Orzo à la courgette & aux champignons poêlés|veg|30|facile|sauteuse|orzo:80 courgette:100 champi:80 ail:0.5 parmesan:15 huile:8 bouillon:0.3|135
+gnocchionepot|One pot de gnocchis tomates-épinards|veg|25|facile|sauteuse|gnocchi:150 tomconc:100 epinards:60 oignon:30 mozza:30 ail:0.5 huile:5|138
+gnocchilardons|Gnocchis poêlés, sauce tomate & lardons|porc|25|facile|poêle|gnocchi:150 lardons:50 tomconc:90 oignon:30 parmesan:10 huile:3|142
+flammcourg|Flammekueche mozzarella & courgettes|veg|30|facile|four|pizzapate:0.4 ffrais:50 mozza:40 courgette:100 oignon:30 herbes:0.1|149
+bowlfalafelpd|Bowl de falafels & patate douce rôtie|veg|45|moyen|four, poêle|poischiches:0.4 patatedouce:150 yaourt:0.5 sesame:5 farine:15 concombre:0.2 salade:0.15 huile:15 citron:0.25 herbes:0.1|154
+bowllibanais|Bowl libanais : taboulé & houmous|veg|25|facile|casserole|boulgour:60 houmous:60 tomate:80 concombre:0.25 herbes:0.2 citron:0.5 huile:10 pita:0.5|153
+tajinevege|Tajine végé aux abricots & amandes|veg|50|moyen|cocotte, casserole|carotte:100 courgette:80 poischiches:0.25 oignon:60 abricots:20 amandes:15 semoule:70 epices:4 huile:8|175
+bibimbappoulet|Bibimbap au poulet|poulet|35|moyen|poêle, casserole|riz:75 poulet:100 carotte:50 epinards:60 oeufs:1 soja:12 sesame:5 huile:8|197
+carboveg|Spaghetti carbonara végétarien|veg|20|facile|casserole, poêle|pates:100 oeufs:1 parmesan:25 champi:80 creme:20 huile:5|168
+avocadotoast|Avocado toast, œuf & bacon croustillant|porc|15|facile|poêle|painmie:2 avocat:0.5 lardons:40 oeufs:1 tomate:50 citron:0.25|195

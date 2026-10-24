@@ -8,7 +8,6 @@ Menus de la semaine et liste de courses chiffrée selon ton budget, ton enseigne
 - **Menu de la semaine** qui tient dans le budget : changer un dîner d'un geste (avec annulation), le garder, choisir une autre recette avec l'effet sur le total, marquer « cuisiné ».
 - **Onglet Recettes** : une centaine de recettes illustrées, recherche (plat ou ingrédient), filtres (favoris, rapides, économiques, végétarien, viande, poisson), favoris (ils reviennent plus souvent dans les menus), « ajouter à la semaine » sur le soir de ton choix.
 - **Ajouter une recette sans la saisir** : colle un texte copié d'un site, d'un message ou d'une note ; une fiche de site (données structurées), un lot JSON, ou utilise le favori de navigateur qui copie la recette (photo comprise) en un geste. Les ingrédients sont reconnus, convertis en quantités et chiffrés ; ce qui est inconnu est créé avec un prix estimé à vérifier. Tu relis, tu corriges, tu enregistres.
-- **Images** : photo de la recette si elle existe (adresse web ou photo prise avec le téléphone), sinon assiette illustrée aux couleurs du plat. Les photos prises au téléphone restent sur l'appareil (elles ne sont pas synchronisées).
 - **Fiche recette** : matériel, ingrédients pour ton foyer, étapes, **mode cuisine** pas à pas.
 - **Liste de courses** dans l'ordre du magasin, paquets entiers, total en direct, « déjà chez moi », prix corrigeables, **meilleur prix par enseigne** si tu en utilises plusieurs.
 - **Placard** : ce que tu as est retiré de la liste, les restes de la semaine y sont ajoutés.
@@ -94,3 +93,18 @@ Limites : pas de prix communautaires dans cette version (ils demandent le serveu
 - Un prix propre à une enseigne n'est utilisé que s'il y a au moins 8 relevés pour elle (rare chez Lidl et Aldi) ; sinon : prix national × niveau de l'enseigne.
 - Tes corrections de prix dans la liste restent prioritaires.
 - Lancer à la main : `npm run update-prices` (Node 22, accès internet) ou le bouton « Run workflow » dans l'onglet Actions.
+
+## Liens vers les recettes (HelloFresh)
+
+`scripts/sources.json` associe une recette de l'appli à une recette HelloFresh proche (`{ "id": { "u": lien, "t": titre } }`). Le lien s'affiche en bas de la fiche recette (« Recette HelloFresh proche ») pour pouvoir comparer en cas d'erreur. Les recettes de l'appli sont réécrites avec nos propres mots : ce sont des recettes *inspirées*, pas des copies.
+
+- Le catalogue des recettes repérées sur hellofresh.fr (adresse + titre) est dans `scripts/sources/pool*.tsv`.
+- Après avoir modifié `sources.json` : `python3 scripts/splice-sources.py` puis `npm run build:pages`.
+
+## Variantes de recettes
+
+Quand deux recettes ne diffèrent que par l'accompagnement ou l'appareil (riz / semoule, air fryer, multicuiseur…), elles forment **une seule fiche** avec des variantes : on choisit la version dans la fiche recette (boutons « Variante ») ou depuis le menu de la semaine. La liste de courses suit la variante choisie.
+
+- Données : `scripts/variants.json` (généré par `node scripts/merge-variants.js scripts/merge2.json`, puis `python3 scripts/splice-variants.py`). Un identifiant de variante s'écrit `base~variante`.
+- Les anciens identifiants (menus, favoris enregistrés) sont remplacés automatiquement.
+- Le menu choisit la variante compatible avec ton matériel (four, air fryer, micro-ondes, multicuiseur).

@@ -15,16 +15,19 @@ test('données : tous les ingrédients des recettes existent, chaque recette a d
   assert.ok(L.R.length >= 200);
 });
 
+// recette réellement proposée (la variante qui convient quand la fiche de base ne convient pas)
+const eff = (r, s) => L.recOf(L.bestVar(r, s));
+const okFor = (o) => { const s = fresh(o).s; return L.allowed(s).map(r => eff(r, s)); };
+
 test('filtre allergènes, régime, temps et matériel', () => {
-  const g = L.allowed(fresh({ allergens: ['gluten'] }).s);
+  const g = okFor({ allergens: ['gluten'] });
   assert.ok(g.length > 5 && g.every(r => !r.al.includes('gluten')));
-  const lait = L.allowed(fresh({ allergens: ['lait'] }).s);
-  assert.ok(lait.every(r => !r.al.includes('lait')));
-  assert.ok(L.allowed(fresh({ diet: 'veg' }).s).every(r => r.veg));
-  assert.ok(L.allowed(fresh({ diet: 'nopork' }).s).every(r => !r.pork));
-  assert.ok(L.allowed(fresh({ maxMin: 20 }).s).every(r => r.min <= 20));
-  assert.ok(L.allowed(fresh({ four: false }).s).every(r => !r.four));
-  assert.ok(L.allowed(fresh({ dislikes: ['champi'] }).s).every(r => !('champi' in r.ing)));
+  assert.ok(okFor({ allergens: ['lait'] }).every(r => !r.al.includes('lait')));
+  assert.ok(okFor({ diet: 'veg' }).every(r => r.veg));
+  assert.ok(okFor({ diet: 'nopork' }).every(r => !r.pork));
+  assert.ok(okFor({ maxMin: 20 }).every(r => r.min <= 20));
+  assert.ok(okFor({ four: false }).every(r => !r.four));
+  assert.ok(okFor({ dislikes: ['champi'] }).every(r => !('champi' in r.ing)));
 });
 
 test('prix : correction utilisateur > communauté > estimation', () => {
@@ -142,7 +145,7 @@ test('bibliothèque : une centaine de recettes variées, tous types de repas', (
   assert.ok(L.R.filter(r => !r.pork).length >= 70);
   for (const k in L.ING) assert.ok(L.ING[k].price > 0 && L.ING[k].p > 0, k);
   // les crevettes portent l'allergène crustacés
-  assert.ok(L.R.find(r => r.id === 'patescrev').al.includes('crustaces'));
+  assert.ok(L.recOf('crevettespates~patescrev').al.includes('crustaces'));
 });
 
 test('import : lecture d’une ligne d’ingrédient (quantités, unités, fractions)', () => {
@@ -273,15 +276,70 @@ test('étapes détaillées : quantités du foyer, jetons valides, niveau de dét
 });
 
 test('matériel : air fryer, micro-ondes, multicuiseur filtrent les recettes', () => {
-  const ids = s => new Set(L.allowed(fresh(Object.assign({ maxMin: 120 }, s)).s).map(r => r.id));
-  const base = ids({ four: true, airfryer: false, micro: true, multi: false });
-  assert.ok(base.has('lasagnes') && base.has('microcolin'));
-  assert.ok(!base.has('afcuisse') && !base.has('multichili'), 'air fryer et multicuiseur masqués sans appareil');
-  const af = ids({ four: false, airfryer: true, micro: false, multi: true });
-  assert.ok(af.has('afcuisse') && af.has('multichili'));
+  const eids = (s) => new Set(okFor(Object.assign({ maxMin: 120 }, s)).map(r => r.id));
+  const base = eids({ four: true, airfryer: false, micro: true, multi: false });
+  assert.ok(base.has('lasagnes') && base.has('colincitron'));
+  assert.ok(![...base].some(id => /~(afcuisse|multichili|afboulettes)$/.test(id)), 'versions air fryer et multicuiseur non imposées sans appareil');
+  const af = eids({ four: false, airfryer: true, micro: false, multi: true });
   assert.ok(af.has('cuisses') && af.has('naanjambon'), 'les recettes du four compatibles passent à l’air fryer');
-  assert.ok(!af.has('lasagnes') && !af.has('microcolin'), 'gratin sans four et micro-ondes absents');
-  const none = ids({ four: false, airfryer: false, micro: false, multi: false });
-  assert.ok(![...none].some(id => { const r = L.R.find(x => x.id === id); return r.four || r.air || r.micro || r.multi; }));
-  assert.ok(L.R.filter(r => r.air).length >= 12 && L.R.filter(r => r.multi).length >= 5 && L.R.filter(r => r.af).length >= 30);
+  assert.ok(!af.has('lasagnes'), 'gratin sans four absent');
+  const none = eids({ four: false, airfryer: false, micro: false, multi: false });
+  assert.ok(![...none].some(id => { const r = L.recOf(id); return r.four || r.air || r.micro || r.multi; }));
+  const all = Object.values(L.VMAP);
+  assert.ok(all.filter(r => r.air).length >= 8 && all.filter(r => r.multi).length >= 4 && all.filter(r => r.micro).length >= 2);
+  assert.ok(L.R.filter(r => r.af).length >= 25);
+});
+
+test('variantes : une fiche, plusieurs versions (accompagnement, appareil)', () => {
+  const b = L.recOf('boulettes');
+  assert.equal(b.vars.length, 2);
+  assert.deepEqual(b.vars.map(v => v.id), ['boulettes~boeuftomate', 'boulettes~afboulettes']);
+  const riz = L.recOf('boulettes~boeuftomate');
+  assert.match(riz.n, /riz/); assert.ok('riz' in riz.ing && !('semoule' in riz.ing) && 'semoule' in b.ing);
+  // chaque variante : ingrédients connus, étapes avec jetons valides, lien éventuel bien formé
+  for (const r of Object.values(L.VMAP)) {
+    for (const k in r.ing) assert.ok(L.ING[k], r.id + ' ' + k);
+    assert.ok(r.steps.length >= 4, r.id);
+    for (const m of r.steps.join(' ').matchAll(/\{([a-z0-9]+)\}/g)) assert.ok(m[1] in r.ing, r.id + ' jeton ' + m[1]);
+    assert.ok(!/\{/.test(L.stepTxt(r, r.steps[2], 3)), r.id);
+    assert.ok(L.recOf(r.base).vars.includes(r));
+  }
+  // la liste de courses suit la variante choisie
+  const st = fresh();
+  const semoule = L.buildLines(['boulettes'], st).map(l => l.id), rizL = L.buildLines(['boulettes~boeuftomate'], st).map(l => l.id);
+  assert.ok(semoule.includes('semoule') && !semoule.includes('riz') && rizL.includes('riz') && !rizL.includes('semoule'));
+});
+
+test('anciens identifiants : menu, favoris et récents suivent la fusion des doublons', () => {
+  const st = fresh({});
+  st.plan.meals = [{ rid: 'boeuftomate', locked: true, done: false }, { rid: 'steakfrites', locked: false, done: false }, { rid: 'tartiflexp', locked: false, done: false }];
+  st.fav = ['boeuftomate', 'boulettes', 'steakfrites']; st.recent = ['afcuisse', 'cuisses'];
+  L.migrateIds(st);
+  assert.deepEqual(st.plan.meals.map(m => m.rid), ['boulettes~boeuftomate', 'steak', 'tartiflette~tartiflexp']);
+  assert.deepEqual(st.fav, ['boulettes', 'steak']); assert.deepEqual(st.recent, ['cuisses']);
+  for (const [old, now] of Object.entries(L.ALIAS)) assert.ok(L.recOf(now), old + ' → ' + now);
+});
+
+test('menu équilibré : poisson et végé présents, pas plus de 2 poulet/bœuf/porc (7 dîners)', () => {
+  for (let i = 0; i < 15; i++) {
+    const st = fresh();
+    const ids = L.pickMenu(st);
+    const g = ids.map(id => L.recOf(id).g);
+    if (g.length < 4) continue;
+    assert.ok(g.includes('poisson'), g.join());
+    assert.ok(g.includes('veg'), g.join());
+    for (const f of ['poulet', 'boeuf', 'porc']) assert.ok(g.filter(x => x === f).length <= 2, f + ' ' + g.join());
+  }
+});
+
+test('sources : chaque lien HelloFresh est bien formé et pointe vers une recette existante', () => {
+  const src = require('../scripts/sources.json');
+  const ids = new Set(L.R.map(r => r.id));
+  for (const [id, s] of Object.entries(src)) {
+    assert.ok(ids.has(id), id);
+    assert.match(s.u, /^https:\/\/www\.hellofresh\.fr\/recipes\/[a-z0-9-]+$/);
+    assert.ok(s.t.length > 3);
+  }
+  for (const r of Object.values(L.VMAP)) if (r.srcT) assert.match(r.src, /^https:\/\/www\.hellofresh\.fr\/recipes\/[a-z0-9-]+$/);
+  assert.ok(L.R.filter(r => r.src).length === Object.keys(src).length);
 });

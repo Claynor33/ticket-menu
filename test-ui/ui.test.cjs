@@ -14,6 +14,7 @@ const click=s=>{const el=typeof s==='string'?$(s):s;if(!el)throw new Error('intr
 const chk=(s,v)=>{const el=typeof s==='string'?$(s):s;if(!el)throw new Error('introuvable '+s);el.checked=v;el.dispatchEvent(new w.Event('change',{bubbles:true}));};
 const ok=(c,m)=>{if(!c){errors.push('ECHEC: '+m);console.log('✗',m);}else console.log('✓',m);};
 const txt=s=>($(s)||{}).textContent||'';
+const closeSheetSafe=()=>{try{click('#close');}catch(e){}};
 setTimeout(()=>{
  try{
   ok(!$('#onb').hidden&&$('#shell').hidden,'questionnaire affiché au premier lancement');
@@ -32,7 +33,7 @@ setTimeout(()=>{
   ok(st.s.store==='leclerc'&&st.s.budget===80&&st.s.kids===2&&st.s.diet==='nopork','réglages enregistrés');
   ok(st.plan.meals.every(m=>m.rid),'menu complet');
   const RR=w.eval('R');
-  ok(st.plan.meals.every(m=>!RR.find(x=>x.id===m.rid).pork),'sans porc respecté');
+  ok(st.plan.meals.every(m=>!w.eval('recOf')(m.rid).pork),'sans porc respecté');
   ok(/Total estimé/.test(txt('.hero')),'résumé du budget');
   // changer / garder / recette
   const before=st.plan.meals[0].rid;
@@ -77,7 +78,7 @@ setTimeout(()=>{
   ok(JSON.parse(w.localStorage.getItem('ticketmenu.v2')).plan.meals.length===7,'7 dîners après ajout d’un jour');
   click('#seg-diet-veg');click('#nav-week');ok(!!$('#regen2'),'bandeau recomposer après changement de réglages');click('#regen2');
   const st3=JSON.parse(w.localStorage.getItem('ticketmenu.v2'));
-  ok(st3.plan.meals.every(m=>m.locked||RR.find(x=>x.id===m.rid).veg),'menu végétarien après recomposition');
+  ok(st3.plan.meals.every(m=>m.locked||w.eval('recOf')(m.rid).veg),'menu végétarien après recomposition');
   // ---- Recettes : parcourir, favoris, ajouter par texte collé, modifier, supprimer
   click('#nav-settings');click('#seg-diet-tout');click('#nav-recipes');
   const nCards=d.querySelectorAll('.rcard').length;ok(nCards>=30,'catalogue de recettes affiché ('+nCards+')');
@@ -115,6 +116,19 @@ setTimeout(()=>{
   click('#r-'+cid);click('#rdel');click('#rdel-yes');
   stC=JSON.parse(w.localStorage.getItem('ticketmenu.v2'));
   ok(stC.custom.recipes.length===0&&Object.keys(stC.custom.ings).length===0&&stC.plan.meals.every(m=>m.rid!==cid),'suppression : recette, ingrédient et menu nettoyés');
+  // variantes : choisir « riz » ou « semoule » dans la fiche, et dans le menu
+  click('#nav-recipes');w.eval('ui.rall=true;ui.rf="all";render()');
+  click('#r-boulettes');ok(!!$('#var-boulettes'),'fiche avec choix de variante');
+  ok(d.querySelectorAll('#sheet .chips button[data-act=setvar]').length===3,'3 versions proposées');
+  click('#var-boulettes\\~boeuftomate');ok(/riz/i.test(txt('#sheet')),'la variante « riz » change les ingrédients');
+  ok($('#var-boulettes\\~boeuftomate').getAttribute('aria-pressed')==='true','variante active signalée');
+  click('#addweek');click('#day-1');
+  let stV=JSON.parse(w.localStorage.getItem('ticketmenu.v2'));
+  ok(stV.plan.meals[1].rid==='boulettes~boeuftomate','la variante choisie est dans le menu');
+  click('#nav-week');click('#open-1');click('#var-boulettes');
+  stV=JSON.parse(w.localStorage.getItem('ticketmenu.v2'));
+  ok(stV.plan.meals[1].rid==='boulettes','changer de variante depuis le menu met le menu à jour');
+  closeSheetSafe();click('#nav-recipes');
   // lot de recettes
   click('#addr');$('#imp').value=JSON.stringify({recipes:[{n:'Pâtes tomate',serves:2,min:15,ing:['200 g de pâtes','1 boîte de tomates concassées'],steps:['Cuire','Servir']},{n:'Omelette',serves:2,ing:['4 œufs','1 noix de beurre'],steps:['Battre','Cuire']}]});
   click('#imp-go');ok(JSON.parse(w.localStorage.getItem('ticketmenu.v2')).custom.recipes.length===2,'lot de 2 recettes importé');
