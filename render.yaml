@@ -1,0 +1,11 @@
+# Déploiement Render (blueprint). Le disque persistant garde la base SQLite entre deux déploiements.
+services:
+  - type: web
+    name: ticket-menu
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: ticket-menu-data
+      mountPath: /data
+      sizeGB: 1
